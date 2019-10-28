@@ -1,0 +1,47 @@
+module Namespace
+
+export BEETLE_AGE
+export BEETLE_AGE_DICT
+export BEETLE_LOCATION
+export BEETLE_PARAMS
+export BEETLE_STATUS
+export BEETLE_STATUS_DICT
+export LARVAE_PARAMS
+export TREE_DBH
+export TREE_ID
+export TREE_LARVAE
+export TREE_LARVAE_CUMUL
+export TREE_LARVAE_EMERG
+export TREE_PARAMS
+export TREE_STATUS
+export TREE_STATUS_DICT
+export TREE_SURFACE_AREA
+export TREE_TYPE
+export TREE_X, TREE_Y
+export TREE_YEARS_INFEST
+
+BEETLE_AGE         = :AGE
+BEETLE_AGE_DICT    = Dict("F" => 0, "M" => 7, "R" => 10, "D" => 22)
+BEETLE_LOCATION    = :TREE_LOCATION
+BEETLE_PARAMS      = Dict("ρ_MAX" => 4, "DAY_FLIGHT" => 2.8)     # 4 adults = 2 females?
+BEETLE_STATUS      = :STATUS
+BEETLE_STATUS_DICT = Dict("F"=>"FORAGE", "M"=>"MATE", "R"=>"REPRODUCTION", "D"=>"DEATH", 0=>"PUPATE")
+
+LARVAE_PARAMS      = Dict("ρ_MAX" => 300)
+
+TREE_DBH           = :EXACT_DBH
+TREE_ID            = :OBJECTID
+TREE_LARVAE        = :LARVAE_COUNT
+TREE_LARVAE_CUMUL  = :LARVAE_CUMULATIVE
+TREE_LARVAE_EMERG  = :BORE_HOLES
+TREE_PARAMS        = Dict("MAX_EMERGENCE" => 80, "MAX_YEARS_INFEST" => 4)
+TREE_STATUS        = :CONDITION
+TREE_STATUS_DICT   = Dict("D"=>"Dead")
+TREE_SURFACE_AREA  = :SURFACE_AREA
+TREE_TYPE          = :COMMON
+TREE_X             = :X
+TREE_Y             = :Y
+TREE_YEARS_INFEST  = :YEARS_INFESTED
+
+
+end
